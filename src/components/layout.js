@@ -33,6 +33,8 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
+      <div>
+      <img src={logo} alt="Image not found"  width="25%"/>
       <h3
         style={{
           fontFamily: `Montserrat, sans-serif`,
@@ -49,6 +51,7 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </h3>
+      </div>
     )
   }
   return (
