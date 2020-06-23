@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import logo from  "./assets/logo.png"
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
@@ -9,6 +9,9 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
+      <div> 
+        <img src={logo} alt="Image not found"  width="25%"/>
+     
       <h1
         style={{
           ...scale(1.5),
@@ -26,6 +29,7 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </h1>
+      </div>
     )
   } else {
     header = (
